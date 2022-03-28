@@ -14,14 +14,15 @@ class Vector:
         """
         try:
             if other_vector.n_dim == self.n_dim:
-                return [i * k for i, k in zip(other_vector.values, self.values)]
+                return sum([i * k for i, k in zip(other_vector.values, self.values)])
                 # for i, k in zip(other_vector.values, self.values):
                 #     aux.append(i * k)
                 # return sum(aux)
             else:
-                raise ValueError(f"El vector ingresado es de dimensión [{other_vector.n_dim}], se esperaba [{self.n_dim}]")
+                raise ValueError(f"El vector ingresado es de dimensión "
+                                 f"[{other_vector.n_dim}], se esperaba [{self.n_dim}]")
         except ValueError as ve:
-            return(ve)
+            return ve
 
 
     def pe(self, a: int) -> object:
@@ -29,5 +30,3 @@ class Vector:
 
     def angle(self, other_vector) -> float:
         return np.cos(self.pp(other_vector) / (self.module * other_vector.module))
-        
-        

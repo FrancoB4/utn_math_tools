@@ -1,7 +1,4 @@
-from mcd_mcm import mcd, mcm
 from vector import Vector
-from prime import prime
-
 
 def run():
     # try:

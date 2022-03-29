@@ -1,5 +1,6 @@
 from vector import Vector
 
+
 def run():
     # try:
     #     a = int(input("Give me a number: "))
@@ -15,8 +16,8 @@ def run():
     vector_1 = Vector([23, -6, 2])
     vector_2 = Vector([9, 3, -11, 10])
 
-    # print(vector_1.pp(vector_2))
-    print(vector_1.pe(5).values)
+    print(vector_1.pp(vector_2))
+    # print(vector_1.pe(5).values)
 
     # print(prime(int(input("Ingrese un numero: "))))
 

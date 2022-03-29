@@ -10,7 +10,6 @@ def prime(a: int) -> bool:
         return True
     elif a % 2 == 0:
         return False
-    
 
     d = int(a**(1/2))
 

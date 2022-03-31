@@ -1,4 +1,5 @@
 from vector import Vector
+from mcd_mcm import mcd, mcm
 
 
 def run():
@@ -12,11 +13,11 @@ def run():
     #         """)
     # except:
     #     print("Try numeric values:")
-
-    vector_1 = Vector([23, -6, 2])
-    vector_2 = Vector([9, 3, -11, 10])
-
-    print(vector_1.pp(vector_2))
+    print(mcd(240, 135))
+    # vector_1 = Vector([23, -6, 2])
+    # vector_2 = Vector([9, 3, -11, 10])
+    #
+    # print(vector_1.pp(vector_2))
     # print(vector_1.pe(5).values)
 
     # print(prime(int(input("Ingrese un numero: "))))
